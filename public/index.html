@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Anonymous Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" Montessori &amp; Chat Anonymously with Anonymous Person">
+    <meta name="keywords" content=" Montessori &amp; chating &amp; Bangalore Chating &amp; 18+ chats, Montessori &amp; Indian Chat room, 
+        Montessori &amp; Kerala Flood Chat &amp; Kerala Flood,
+        Montessori &amp; Kerala Tourism &amp; Kannur Chating,
+        Montessori &amp; Chat near me, Near by Chat, Chat with Girl, Chat
+        All Chats,Chating,Chats, Unknown girl Chat, Chating, Anonymous Chat">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+    <script src="main.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js'></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+     <div class="container">
+
+           <div class="jumbotron" style="text-align:center;font-weight:800;font-size:25px;background-image:linear-gradient(to bottom,#3987CE,#D18266);color:#fff">
+                  Anonymous Chat
+           </div>
+            <div class="chat-box" id="chat-box" class="collapse">
+                  <h5> <i id="chat-box-i" data="-"> - </i>Online Users</h5>
+                  <ul id="userList">
+
+                  </ul>
+
+            </div>
+            <div id="all-chats" class="all-chats">
+                  <h3>Chats</h3>
+            </div>
+           <div class="form-group">
+            
+            <label for="usr">Message to Team:</label>
+            <textarea type="text" class="form-control" id="usr-msg" cols="30" rows="3"></textarea>
+            <br/>
+            <button class="btn btn-success" id="send"> Send </button>
+            
+          </div>
+
+     </div>
+  
+
+</body>
+</html>

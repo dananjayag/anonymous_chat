@@ -1,0 +1,18 @@
+{
+  "name": "anounymous_chat",
+  "version": "1.0.0",
+  "description": "Chat App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Dhananjay",
+  "license": "ISC",
+  "dependencies": {
+    "chance": "^1.0.16",
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1"
+  }
+}
