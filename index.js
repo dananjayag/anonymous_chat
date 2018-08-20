@@ -41,7 +41,7 @@ io.on('connection',(socket)=>{
                 usr:user.name
             }
             io.emit("receive",data)
-            if(UserList.length<=2){
+            if(UserList.length<=5){
                 axios.get(`https://api.dialogflow.com/v1/query?v=20150910&contexts=shop&lang=en&query=${datta}&sessionId=12345&timezone=America/New_York`,{headers:headers}).then((res)=>{
                         console.log(res.data.result.fulfillment.speech);
                         let data={
