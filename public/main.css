@@ -19,12 +19,12 @@ ul[id="userList"] li i{
 }
 .chat-box{
     position: fixed;
-    display: none;
     z-index: 10000000;
     top: 0;
-    right: 0;
+    left:0px;
+    width: 200px;
     height: auto;
-    width: 300px;
+    transition:width 2s;
     background-color: #f5efde;
     text-align: center;
 }
@@ -39,11 +39,34 @@ ul[id="userList"] li i{
     margin-right: 10px;
 }
 
-.chat-box > ul[id="userList"].close{
-      height: 20px;
+.chat-box.close{
+     width:0px;
+     display: none;
 }
 
+.chat-box h5 a{
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    color:#000
+}
 .all-chats{
     height: 300px;
     overflow-y: scroll
+}
+.btn-holder{
+    position: fixed;
+    top:10px;
+    cursor: pointer;
+    left:0px;
+}
+.btn-holder.close{
+    display: none
+}
+@media screen and (max-width: 600px) {
+    .chat-box{
+        width: 100%;
+        transition:width 2s;
+    }
+
 }
