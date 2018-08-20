@@ -33,3 +33,12 @@ $((e)=>{
         
     });
 })
+
+function closeNav(){
+   $('#chat-box').toggleClass('close')
+   $('#holder').toggleClass('close')
+}
+function openNav(){
+    $('#chat-box').toggleClass('close')
+    $('#holder').toggleClass('close')
+}

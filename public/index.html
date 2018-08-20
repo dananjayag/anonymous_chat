@@ -27,8 +27,11 @@
            <div class="jumbotron" style="text-align:center;font-weight:800;font-size:25px;background-image:linear-gradient(to bottom,#3987CE,#D18266);color:#fff">
                   Anonymous Chat
            </div>
+            <div class="btn-holder" id="holder close">
+                  <i class="fa fa-address-book" onclick="openNav()" style="font-size:48px;color:red;display:inline-block"></i>
+            </div>
             <div class="chat-box" id="chat-box" class="collapse">
-                  <h5> <i id="chat-box-i" data="-"> - </i>Online Users</h5>
+                  <h5>Online Users <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></h5>
                   <ul id="userList">
 
                   </ul>
